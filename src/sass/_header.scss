@@ -10,14 +10,19 @@
   background-color: $brand;
   padding: 32px $gutter;
   text-align: center;
+
+  h1 {
+    margin: 0;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 86px;
+    line-height: $header-height;
+    text-indent: -15px;
+  }
 }
 
-.site-logo {
-  margin: 0;
-  color: white;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 86px;
-  line-height: $header-height;
-  text-indent: -15px;
+.logo {
+  width: 160px;
+  margin: -10px 0 20px;
 }

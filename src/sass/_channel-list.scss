@@ -11,7 +11,7 @@
 
 .onboarding{
   padding: 0 $gutter;
-  margin: 20px 0 10px;
+  margin: 15px 0 30px;
   font-size: 22px;
   font-weight: 400;
   text-align: center;
@@ -27,17 +27,28 @@
 
   padding: 10px $gutter;
   border-bottom: 1px solid lighten($ink, 35);
+  transition: all 0.4s;
 
   &:last-child {
     border-bottom: 0;
   }
+
+  &.active {
+    background: $brand;
+    border-bottom: 1px solid $brand;
+    box-shadow: 0 -1px 0 $brand;
+    color: white;
+
+    .current-program {
+      color: white;
+    }
+  }
 }
 
 .channel-img {
-  border: 0;
   width: 98px;
   height: 56px;
-  background: gray;
+  background: hsl(0, 0, 80);
   float: left;
 }
 
@@ -53,10 +64,11 @@
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 2px;
+  transition: all 0.4s;
 }
 
 .channel-name {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 // <div class="quote-btn-container">
