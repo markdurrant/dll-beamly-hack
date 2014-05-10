@@ -5,15 +5,15 @@
 // COLOURS
 //===============================================================================
 $paper: white;
-$ink: black;
+$ink: #8A9C9A;
+$brand: #00FFD6;
 
-$header: $ink;
-$link: blue;
+
+$header: #7E9693;
+$link: #00D1B0;
 
 // FONTS
 //===============================================================================
-$body-font: sans-serif;
-
 // font stacks
 $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $helvetica: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -21,9 +21,11 @@ $lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
 $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
 $verdana: Verdana, Geneva, sans-serif;
 
+$body-font: 'Titillium Web', $helvetica;
+
 // DIMENSIONS
 //===============================================================================
-$base-font-size: 20px;
+$base-font-size: 18px;
 
 // font sizes
    $tera: 4.2rem; // 84px @ 20px base font size
@@ -35,3 +37,7 @@ $base-font-size: 20px;
   $delta: 1rem;   // 20px @ 20px base font size
 $epsilon: 0.8rem; // 16px @ 20px base font size
    $zeta: 0.6rem; // 12px @ 20px base font size
+
+$header-height: 40px;
+$quote-btn-height: 80px;
+$gutter: 15px;

@@ -1,0 +1,78 @@
+//===============================================================================
+// CHANNEL-LIST
+//===============================================================================
+// <ul class="channels-list">
+//   <li class="channel-item">
+//     <img src="" class="channel-img">
+//     <span class="channel-name">BBC one</span>
+//     <span class="current-program">Formula 1</span>
+//   </li>
+// </ul>
+
+.onboarding{
+  padding: 0 $gutter;
+  margin: 20px 0 10px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: lighten($ink, 15);
+}
+
+.channels-list {
+  line-height: 1;
+}
+
+.channel-item {
+  @include clearfix;
+
+  padding: 10px $gutter;
+  border-bottom: 1px solid lighten($ink, 35);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.channel-img {
+  border: 0;
+  width: 98px;
+  height: 56px;
+  background: gray;
+  float: left;
+}
+
+.current-program,
+.channel-name {
+  display: block;
+  padding-left: 110px;
+  line-height: 1;
+}
+
+.current-program {
+  color: $header;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.channel-name {
+  font-size: 14px;
+}
+
+// <div class="quote-btn-container">
+//   <button class="quote-btn">quote this</button>
+// </div>
+
+.quote-btn-container {
+  padding: $gutter;
+  background-color: rgba($paper, 0.9);
+  height: $quote-btn-height;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.quote-btn {
+  width: 100%;
+  text-transform: uppercase;
+}
