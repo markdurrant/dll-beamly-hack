@@ -25,6 +25,43 @@ body {
 body {
 }
 
-.wrap {
+.page-1 {
+  width: 100%;
   padding-bottom: $quote-btn-height;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all 0.25s;
+
+  &.active {
+    left: 0;
+  }
+}
+
+.page-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  transition: all 0.25s;
+
+  &.active {
+    left: 0;
+
+    .program-info {
+      left: 0;     
+    }
+  }
+}
+
+.program-info {
+  transition: all 0.25s;
+  padding: $gutter;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  background: white;
 }
