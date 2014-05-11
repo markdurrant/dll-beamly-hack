@@ -29,12 +29,12 @@
   background: $paper;
   width: 100%;
   height: $quote-btn-height;
-  z-index: 998;
-  top: -15px;
+  z-index: 999;
+  top: -$quote-btn-height;
   transition: all 0.25s;
 
   &.active {
-    top: 66px;
+    top: 0;
   }
 }
 

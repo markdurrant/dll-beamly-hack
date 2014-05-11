@@ -12,11 +12,11 @@ $( document ).ready( function() {
     $( '.share-btn-container' ).addClass('active');
   });
 
-  $('.caption-list').scrollTop($('.caption-list').scrollHeight);
-
   $( '.quote-btn' ).click( function( event ) {
     $( '.page-1' ).removeClass( 'active' );
     $( '.page-2' ).addClass( 'active' );
   });
+
+  $('.captions-list').scrollTop(9999);
 
 });
